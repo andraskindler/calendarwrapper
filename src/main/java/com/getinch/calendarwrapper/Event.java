@@ -152,7 +152,7 @@ public class Event {
             tempList.add(CalendarContract.Events.UID_2445);
         }
 
-        final Cursor cursor = contentResolver.query(CalendarContract.Attendees.CONTENT_URI, tempList.toArray(new String[tempList.size()]), query, queryArgs, sortOrder);
+        final Cursor cursor = contentResolver.query(CalendarContract.Events.CONTENT_URI, tempList.toArray(new String[tempList.size()]), query, queryArgs, sortOrder);
 
         final List<Event> result = new ArrayList<Event>();
 
